@@ -1,15 +1,131 @@
-body {
-    padding-top: 50px;
-}
-.main-wrapper {
-    width: 95%;
-    margin: 0 auto;
-    background: #f5f5f5;
-    border: 1px solid gray;
-    border-radius: 3px;
-    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
+// SASS VARIABLES AND MIXINS
+
+$lato: 'Lato', sans-serif;
+$montserrat: 'montserrat', sans-serif;
+$black: #262626;
+$white: #fff;
+$lightgray: #f5f5f5;
+$lightblue: #add8e6;
+
+@mixin h1 {
+    font-family: $montserrat;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(lightblue, lightslategray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.main-wrapper li {
-    padding: 8px;
+
+
+
+// MAIN STYLES FOR TODO APP
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 50px;
+    font-family: $lato;
+    color: $black;
+}
+.main-wrapper {
+    margin: 0 auto;
+    .add-text {
+        text-align: center;
+        color: tomato;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        margin-bottom: 30px;
+    }
+    .error-text {
+        background: tomato;
+        color: white;
+        padding: 25px;
+        width: 85%;
+        border-radius: 3px;
+        margin: 0 auto;
+        font-family: $montserrat;
+        text-transform: uppercase;
+        text-align: center;
+        min-height: 70px;
+    }
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 50px;
+    .title-container {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        @include h1;
+    }
+    i {
+        font-size: 38px;
+    }
+    p {
+        text-transform: uppercase;
+        font-size: .9em;
+    }
+}
+
+.list-container {
+    border-radius: 3px;
+    margin-bottom: 30px;
+    ul {
+        min-height: 150px;
+        max-height: 375px;
+        overflow: auto;
+    }
+    li {
+        background: $lightgray;
+        position: relative;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+    }
+    li:first-child {
+        border-top: 1px solid gray;
+    }
+    li:nth-child(odd){
+        background: $white;
+    }
+    span {
+        position: absolute;
+        right: 25px;
+    }
+
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    input {
+        width: 80%;
+        padding-left: 15px;
+    }
+    input::-webkit-input-placeholder {
+        text-transform: uppercase;
+    }
+    input[type=text]{
+        text-transform: uppercase;
+    }
+    input:focus {
+        outline-color: lightblue;
+    }
+    button {
+        width: 20%;
+        height: 55px;
+        background: $black;
+        border: none;
+        color: $lightblue;
+    }
 }

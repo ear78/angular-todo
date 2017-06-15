@@ -1,5 +1,6 @@
 app.controller('mainCtrl', function($scope){
 
+    $scope.isError = true;
     $scope.products = ["Milk", "Bread", "Cheese"];
 
     // ADD ITEM TO TODO LIST
@@ -8,15 +9,17 @@ app.controller('mainCtrl', function($scope){
         $scope.errorText = "";
 
         if(!$scope.addMe){
-            $scope.addText = "Please add something to the list.";
+            $scope.addText = " Nothing to add.";
             return;
         }
         if($scope.products.indexOf($scope.addMe) === -1){
             $scope.products.push($scope.addMe);
             $scope.addMe = "";
+            $scope.isError = true;
         }
         else {
             $scope.errorText = "The item you added is already on the list.";
+            $scope.isError = false;
         }
     }
 
