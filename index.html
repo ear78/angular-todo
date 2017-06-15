@@ -3,9 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Todo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- MAIN STYLESHEET COMPILE AFTER SASS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
     </head>
     <body>
-        <div ng-app="todo" ng-controller="mainCtrl" class="">
+        <div ng-app="todo" ng-controller="mainCtrl" class="main-wrapper">
+            <h1>Todo</h1>
+            <i class="material-icons small-icon">line_style</i>
             <ul>
                 <li ng-repeat="product in products">{{ product }}
                     <span ng-click="removeItem($index)">&times;</span>
