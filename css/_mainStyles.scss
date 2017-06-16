@@ -30,6 +30,31 @@ body {
     font-family: $lato;
     color: $black;
 }
+
+.loader {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    
+    p {
+        font-family: $montserrat;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .loader-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        @include h1;
+        font-size: 3.5em;
+    }
+    i {
+        font-size: 45px;
+    }
+}
+
 .main-wrapper {
     margin: 0 auto;
     .add-text {
