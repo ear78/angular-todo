@@ -100,9 +100,9 @@ body {
   border-radius: 3px;
   margin-bottom: 30px; }
   .list-container ul {
-    min-height: 150px;
     max-height: 215px;
-    overflow: auto; }
+    overflow: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); }
   .list-container li {
     background: #f5f5f5;
     position: relative;
