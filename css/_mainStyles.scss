@@ -98,6 +98,13 @@ body {
     span {
         position: absolute;
         right: 25px;
+        top: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    i {
+        font-size: 20px;
     }
 
 }
@@ -132,6 +139,9 @@ body {
         border-radius: 3px;
         margin: 0 auto;
         display: block;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

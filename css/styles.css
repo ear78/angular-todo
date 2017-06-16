@@ -114,7 +114,12 @@ body {
     background: #fff; }
   .list-container span {
     position: absolute;
-    right: 25px; }
+    right: 25px;
+    top: 15px; }
+    .list-container span:hover {
+      cursor: pointer; }
+  .list-container i {
+    font-size: 20px; }
 
 .input-container {
   margin-bottom: 30px; }
@@ -142,6 +147,8 @@ body {
     border-radius: 3px;
     margin: 0 auto;
     display: block; }
+    .input-container button:hover {
+      cursor: pointer; }
 
 .arrow-container {
   text-align: center;
