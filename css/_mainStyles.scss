@@ -163,3 +163,10 @@ footer {
         color: $gray;
     }
 }
+
+
+@media (min-width: 425px){
+    .main-wrapper {
+        max-width: 425px;
+    }
+}

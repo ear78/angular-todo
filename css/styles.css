@@ -169,4 +169,8 @@ footer {
     font-family: "montserrat", sans-serif;
     color: #808080; }
 
+@media (min-width: 425px) {
+  .main-wrapper {
+    max-width: 425px; } }
+
 /*# sourceMappingURL=styles.css.map */
