@@ -35,7 +35,7 @@ body {
     max-width: 500px;
     margin: 100px auto;
     text-align: center;
-    
+
     p {
         font-family: $montserrat;
         text-transform: uppercase;
@@ -45,6 +45,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
     }
     h1 {
         @include h1;
@@ -52,6 +53,26 @@ body {
     }
     i {
         font-size: 45px;
+    }
+
+    //// SPINNER ANIMATED CIRCLE ////////
+    .spinner {
+      margin: 0 auto 50px;
+      border: 6px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 6px solid $black;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: spin 2s linear 4;
+      animation: spin 2s linear 4;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
     }
 }
 
@@ -103,19 +124,21 @@ body {
 .list-container {
     border-radius: 3px;
     margin-bottom: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
     ul {
         max-height: 215px;
         overflow: auto;
-        box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
     }
     li {
         background: $lightgray;
         position: relative;
         padding: 15px;
-        border-bottom: 1px solid gray;
+        border-top: 1px solid gray;
     }
     li:first-child {
-        border-top: 1px solid gray;
+        border-top: none;
     }
     li:nth-child(odd){
         background: $white;
