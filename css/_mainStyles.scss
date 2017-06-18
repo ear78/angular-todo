@@ -26,16 +26,20 @@ $gray: #808080;
     box-sizing: border-box;
 }
 body {
-    padding-top: 30px;
+    // padding-top: 30px;
     font-family: $lato;
     color: $black;
 }
 
 .loader {
     max-width: 500px;
-    margin: 100px auto;
+    // margin: 100px auto;
     text-align: center;
-
+    padding-top: 100px;
+    background: $black;
+    color: $white;
+    height: 100vh;
+    width: 100vw;
     p {
         font-family: $montserrat;
         text-transform: uppercase;
@@ -58,9 +62,9 @@ body {
     //// SPINNER ANIMATED CIRCLE ////////
     .spinner {
       margin: 0 auto 50px;
-      border: 6px solid #f3f3f3;
+      border: 6px solid $gray;
       border-radius: 50%;
-      border-top: 6px solid $black;
+      border-top: 6px solid $lightblue;
       width: 60px;
       height: 60px;
       -webkit-animation: spin 2s linear 4;
@@ -80,6 +84,7 @@ body {
 .main-wrapper {
     margin: 0 auto;
     width: 95%;
+    padding-top: 25px;
     .add-text {
         text-align: center;
         max-width: 325px;
@@ -219,8 +224,8 @@ body {
     }
     @keyframes downArrow {
         0% { transform: translate3d(0, 0px, 0)}
-        49% { transform: translate3d(0, 5px, 0)}
-        50% { transform: translate3d(0,5px,0)}
+        49% { transform: translate3d(0, 8px, 0)}
+        50% { transform: translate3d(0,8px,0)}
         100% { transform: translate3d(0,0px,0)}
     }
 }
