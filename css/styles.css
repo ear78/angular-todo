@@ -49,7 +49,7 @@ table {
   box-sizing: border-box; }
 
 body {
-  padding-top: 50px;
+  padding-top: 30px;
   font-family: "Lato", sans-serif;
   color: #262626; }
 
@@ -97,7 +97,8 @@ body {
   100% {
     -webkit-transform: rotate(360deg); } }
 .main-wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 95%; }
   .main-wrapper .add-text {
     text-align: center;
     max-width: 325px;
@@ -119,7 +120,7 @@ body {
 
 .header-container {
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
   .header-container .title-container {
     margin-bottom: 10px;
     display: flex;
@@ -208,7 +209,7 @@ body {
 
 .arrow-container {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
   .arrow-container i {
     font-size: 50px;
     animation-name: downArrow;

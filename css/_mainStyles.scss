@@ -26,7 +26,7 @@ $gray: #808080;
     box-sizing: border-box;
 }
 body {
-    padding-top: 50px;
+    padding-top: 30px;
     font-family: $lato;
     color: $black;
 }
@@ -79,6 +79,7 @@ body {
 //// MAIN WRAPPER SECTION AND DOWN ////////////////
 .main-wrapper {
     margin: 0 auto;
+    width: 95%;
     .add-text {
         text-align: center;
         max-width: 325px;
@@ -103,7 +104,7 @@ body {
 
 .header-container {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .title-container {
         margin-bottom: 10px;
         display: flex;
@@ -209,7 +210,7 @@ body {
 
 .arrow-container {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     i {
         font-size: 50px;
         animation-name: downArrow;
