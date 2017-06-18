@@ -53,7 +53,7 @@ body {
   color: #262626; }
 
 .loader {
-  max-width: 500px;
+  margin: 0px auto;
   text-align: center;
   padding-top: 100px;
   background: #262626;
